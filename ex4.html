@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <title>Exercício 4</title>
+</head>
+<style>
+    .background {
+        background-color: rgb(238, 153, 153);
+    }
+
+
+    .h1 {
+        color: white;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-align: center;
+    }
+
+    .butao {
+        background-color: rgb(238, 153, 153);
+        color: white;
+        border: 1px solid;
+        margin-left: 45%;
+        width: 210px;
+        font-size: 18px;
+
+    }
+
+    #results {
+        color: white;
+        margin-left: 43%;
+        font-size: 18px;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+</style>
+
+<body class="background">
+    <h1 class="h1">Interagindo com partes do HTML (DOM)</h1>
+    <button class="butao" onclick="inicio()">Clique para iniciar!</button>
+    <section id="results">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('results')
+            res.innerHTML = `<p>Olá, <strong> ${nome}</strong>! É um prazer tê-lo(a) aqui!`
+        }
+    </script>
+
+</body>
+
+</html>

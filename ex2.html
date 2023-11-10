@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <title>Exercício 2</title>
+</head>
+<style>
+    .background {
+        background-color: rgb(238, 153, 153);
+    }
+
+
+    .h1 {
+        color: white;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-align: center;
+    }
+
+    .butao {
+        background-color: rgb(238, 153, 153);
+        color: white;
+        border: 1px solid;
+        margin-left: 45%;
+        width: 210px;
+        font-size: 18px;
+
+    }
+</style>
+
+<body class="background">
+    <h1 class="h1">Interagindo com um botão</h1>
+    <button class="butao" onclick="clicou()">Clique em mim!</button>
+    <script>
+        function clicou() {
+            window.alert('Você clicou no botão :)')
+        }
+    </script>
+</body>
+
+</html>
